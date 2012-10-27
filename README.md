@@ -1,4 +1,4 @@
-#**Here Is My Memory**
+#**Here Is My Memory(H.I.M.M.)**
 ======================
 Here Is My Memory(이하 HIMM)은 하이브리드 앱입니다.
 사진에 기록을 남기고 위치를 파악할 수 있어 기존의 갤러리를 대체할 수 있습니다.
