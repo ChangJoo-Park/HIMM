@@ -13,6 +13,6 @@ Here Is My Memory(이하 HIMM)은 하이브리드 앱입니다.
 
 ##*맡은 파트*
 ======================
-- 남중민 - [폰갭](http://phonegap.com)
-- 박창주 - [포토스와이프](http://www.photoswipe.com/)
-- 장형주 - [구글맵](http://code.google.com/p/jquery-ui-map/)
+- 남중민 [메일](dbflgks0602@gmail.com)- [폰갭](http://phonegap.com)
+- 박창주 [메일](pcjpcj2@gmail.com) - [포토스와이프](http://www.photoswipe.com/)
+- 장형주 [메일](dacapolife87@gmail.com) - [구글맵](http://code.google.com/p/jquery-ui-map/)
