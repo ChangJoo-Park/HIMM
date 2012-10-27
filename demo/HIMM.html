@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script src="js/himm.js">
+        </script>
+    </head>
+    
+    <body>
+        <!-- Home -->
+        <div data-role="page" data-theme="a" id="page1">
+            <div data-theme="a" data-role="header">
+                <h5>
+                    H.I.M.M.
+                </h5>
+            </div>
+            <div data-role="content">
+                <h1>
+                    Here.Is.My.Memory
+                </h1>
+                <div>
+                    <p style="text-align: center; ">
+                        잊을 수 없는 순간을 기록하세요
+                    </p>
+                </div>
+                <h2>
+                    2012년 10월 30일 현재
+                </h2>
+                <h3>
+                    xx개의 기록들이 있습니다.
+                </h3>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div>
+                            <p style="text-align: center; ">
+                                <b>
+                                    08109325
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div>
+                            <p>
+                                남중민
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-a">
+                        <div>
+                            <p style="text-align: center; ">
+                                <b>
+                                    08109335
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div>
+                            <p>
+                                <b>
+                                    박창주
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-a">
+                        <div>
+                            <p style="text-align: center; ">
+                                <b>
+                                    08109367
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div>
+                            <p>
+                                <b>
+                                    장형주
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-theme="" data-icon="plus">
+                            Diary
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page3" data-theme="" data-icon="search">
+                            Map
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Diary -->
+        <div data-role="page" data-theme="b" id="page2">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    H.I.M.M.
+                </h3>
+                <a data-role="button" data-transition="pop" data-theme="b" href="#page12"
+                data-icon="plus" data-iconpos="right" class="ui-btn-right">
+                    New
+                </a>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="a" data-inset="false">
+                    <li data-role="list-divider" role="heading">
+                        2012년 10월
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page9" data-transition="slide">
+                            28일
+                            <span class="ui-li-count">
+                                2
+                            </span>
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="slide">
+                            21일
+                            <span class="ui-li-count">
+                                8
+                            </span>
+                        </a>
+                    </li>
+                    <li data-role="list-divider" role="heading">
+                        2012년 09월
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            22일
+                            <span class="ui-li-count">
+                                6
+                            </span>
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            12일
+                            <span class="ui-li-count">
+                                2
+                            </span>
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            5일
+                            <span class="ui-li-count">
+                                7
+                            </span>
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            1일
+                            <span class="ui-li-count">
+                                1
+                            </span>
+                        </a>
+                    </li>
+                    <li data-role="list-divider" role="heading">
+                        2012년 08월
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            15일
+                            <span class="ui-li-count">
+                                4
+                            </span>
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            1일
+                            <span class="ui-li-count">
+                                6
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-theme="" data-icon="plus">
+                            Diary
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page3" data-theme="" data-icon="search">
+                            Map
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Map -->
+        <div data-role="page" data-theme="b" id="page3">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    H.I.M.M.
+                </h3>
+                <a data-role="button" href="#page3" data-icon="minus" data-iconpos="left"
+                class="ui-btn-right">
+                    Delete
+                </a>
+            </div>
+            <div data-role="content">
+                <img id="map-map" src="https://maps.googleapis.com/maps/api/staticmap?center=광화문&amp;zoom=14&amp;size=288x200&amp;markers=광화문|&amp;sensor=false"
+                width="100%" height="100%">
+                <h3>
+                    2012년 10월 28일
+                </h3>
+                <div>
+                    <p>
+                        광화문에 갔다.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <span>
+                            <b>
+                                오늘은 광화문에 갔다
+                            </b>
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            <b>
+                            </b>
+                            <b>
+                                좋았다
+                            </b>
+                        </span>
+                    </p>
+                </div>
+                <form action="">
+                    <a data-role="button" data-inline="true" href="#page3" data-icon="arrow-l"
+                    data-iconpos="left">
+                        이전
+                    </a>
+                    <a data-role="button" data-inline="true" href="#page3" data-icon="arrow-r"
+                    data-iconpos="right">
+                        다음
+                    </a>
+                </form>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-theme="" data-icon="plus">
+                            Diary
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page3" data-theme="" data-icon="search">
+                            Map
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Diary - Content -->
+        <div data-role="page" data-theme="b" id="page9">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" href="#page9" data-icon="minus" data-iconpos="left"
+                class="ui-btn-right">
+                    Delete
+                </a>
+                <h3>
+                    H.I.M.M.
+                </h3>
+            </div>
+            <div data-role="content">
+                <h5>
+                    2012년 10월 28일
+                </h5>
+                <div>
+                    <p>
+                        <b>
+                            광화문에 갔다.
+                        </b>
+                    </p>
+                </div>
+                <div style="">
+                    <img style="width: 100%; height: 100%" src="images/image1.png">
+                </div>
+                <div>
+                    <p>
+                        <span style="font-size: small; " data-mce-style="font-size: small;">
+                            <b>
+                                오늘은 광화문에 갔다
+                            </b>
+                        </span>
+                    </p>
+                    <p>
+                        <span style="font-size: small; " data-mce-style="font-size: small;">
+                            <b>
+                            </b>
+                            <b>
+                                좋았다
+                            </b>
+                        </span>
+                    </p>
+                </div>
+                <a data-role="button" data-inline="true" data-direction="reverse" data-transition="slide"
+                data-theme="d" href="#page2" data-icon="arrow-l" data-iconpos="left">
+                </a>
+                <a data-role="button" data-inline="true" data-theme="e" href="#page3"
+                data-icon="search" data-iconpos="left">
+                </a>
+                <a data-role="button" data-inline="true" data-transition="slide" data-theme="d"
+                href="#page8" data-icon="arrow-r" data-iconpos="left">
+                </a>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-theme="" data-icon="plus">
+                            Diary
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page3" data-theme="" data-icon="search">
+                            Map
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Diary - Content2 -->
+        <div data-role="page" data-theme="b" id="page8">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    H.I.M.M.
+                </h3>
+                <a data-role="button" href="#page8" data-icon="minus" data-iconpos="left"
+                class="ui-btn-right">
+                    Delete
+                </a>
+            </div>
+            <div data-role="content">
+                <h5>
+                    2012년 10월 28일
+                </h5>
+                <div>
+                    <p>
+                        <b>
+                            엽기떡볶이를 먹었다
+                        </b>
+                    </p>
+                </div>
+                <div style="">
+                    <img style="width: 100%; height: 100%" src="images/image2.jpg">
+                </div>
+                <div>
+                    <p>
+                        <font size="2">
+                            <b>
+                                친구와 먹었는데 너무 맵다.
+                            </b>
+                        </font>
+                    </p>
+                </div>
+                <a data-role="button" data-inline="true" data-transition="slide" data-theme="d"
+                href="#page8" data-icon="arrow-l" data-iconpos="left">
+                </a>
+                <a data-role="button" data-inline="true" data-theme="e" href="#page3"
+                data-icon="search" data-iconpos="left">
+                </a>
+                <a data-role="button" data-inline="true" data-transition="slide" data-theme="d"
+                href="#page9" data-icon="arrow-r" data-iconpos="left">
+                </a>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-theme="" data-icon="plus">
+                            Diary
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page3" data-theme="" data-icon="search">
+                            Map
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Select Camera or Open File -->
+        <div data-role="page" data-theme="b" id="page12">
+            <div data-theme="a" data-role="header">
+                <h5>
+                    H.I.M.M.
+                </h5>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        New
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page14" data-transition="pop">
+                            새 사진으로
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page14" data-transition="pop">
+                            기존 사진으로
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-theme="" data-icon="plus">
+                            Diary
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page3" data-theme="" data-icon="search">
+                            Map
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Writing.. -->
+        <div data-role="page" data-theme="b" id="page14">
+            <div data-theme="a" data-role="header">
+                <h5>
+                    H.I.M.M.
+                </h5>
+            </div>
+            <div data-role="content">
+                <h2>
+                    파일명 : 2012-10-30.jpg
+                </h2>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textarea2">
+                            제목
+                        </label>
+                        <textarea name="" id="textarea2" placeholder=""></textarea>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textarea1">
+                            내용
+                        </label>
+                        <textarea name="" id="textarea1" placeholder=""></textarea>
+                    </fieldset>
+                </div>
+                <input type="submit" data-theme="b" data-icon="check" data-iconpos="left"
+                value="글쓰기" data-mini="true">
+            </div>
+            <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#page1" data-theme="" data-icon="home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page2" data-theme="" data-icon="plus">
+                            Diary
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page3" data-theme="" data-icon="search">
+                            Map
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+              //App custom javascript
+        </script>
+    </body>
+
+</html>
