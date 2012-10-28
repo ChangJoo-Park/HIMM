@@ -37,12 +37,19 @@
                         잊을 수 없는 순간을 기록하세요
                     </p>
                 </div>
+                <div style="text-align:center;">
+                <a data-role="button" data-transition="pop" data-theme="b" href="#page12"
+                data-icon="plus" data-iconpos="right" class="ui-btn-right" data-rel="dialog">
+                    새로운 기록 남기기
+                </a>
+                </div>  
                 <h2>
                     2012년 10월 30일 현재
                 </h2>
                 <h3>
                     xx개의 기록들이 있습니다.
                 </h3>
+
                 <div class="ui-grid-a">
                     <div class="ui-block-a">
                         <div>
@@ -125,7 +132,7 @@
                     H.I.M.M.
                 </h3>
                 <a data-role="button" data-transition="pop" data-theme="b" href="#page12"
-                data-icon="plus" data-iconpos="right" class="ui-btn-right">
+                data-icon="plus" data-iconpos="right" class="ui-btn-right" data-rel="dialog">
                     New
                 </a>
             </div>
@@ -135,8 +142,12 @@
                         2012년 10월
                     </li>
                     <li data-theme="c">
-                        <a href="#page9" data-transition="slide">
-                            28일
+                        <a href="#page9" data-transition="slide" >
+                            <div class="calendar">
+                                <span calss="month">Oct</span>
+                                <span class="day">28</span>
+                            </div>
+                            <span> 광화문에 갔다...</span>
                             <span class="ui-li-count">
                                 2
                             </span>
@@ -144,7 +155,11 @@
                     </li>
                     <li data-theme="c">
                         <a href="#page2" data-transition="slide">
-                            21일
+                            <div class="calendar">
+                                <span calss="month">Oct</span>
+                                <span class="day">21</span>
+                            </div>
+                            <span class="title"> 제목</span>
                             <span class="ui-li-count">
                                 8
                             </span>
@@ -155,7 +170,11 @@
                     </li>
                     <li data-theme="c">
                         <a href="#page1" data-transition="slide">
-                            22일
+                            <div class="calendar">
+                                <span calss="month">Sep</span>
+                                <span class="day">22</span>
+                            </div>
+                            <span class="title"> 제목</span>
                             <span class="ui-li-count">
                                 6
                             </span>
@@ -163,7 +182,11 @@
                     </li>
                     <li data-theme="c">
                         <a href="#page1" data-transition="slide">
-                            12일
+                            <div class="calendar">
+                                <span calss="month">Sep</span>
+                                <span class="day">12</span>
+                            </div>
+                            <span class="title"> 제목</span>
                             <span class="ui-li-count">
                                 2
                             </span>
@@ -171,7 +194,11 @@
                     </li>
                     <li data-theme="c">
                         <a href="#page1" data-transition="slide">
-                            5일
+                            <div class="calendar">
+                                <span calss="month">Sep</span>
+                                <span class="day">5</span>
+                            </div>
+                            <span class="title"> 제목</span>
                             <span class="ui-li-count">
                                 7
                             </span>
@@ -179,7 +206,11 @@
                     </li>
                     <li data-theme="c">
                         <a href="#page1" data-transition="slide">
-                            1일
+                            <div class="calendar">
+                                <span calss="month">Sep</span>
+                                <span class="day">1</span>
+                            </div>
+                            <span class="title"> 제목</span>
                             <span class="ui-li-count">
                                 1
                             </span>
@@ -190,7 +221,10 @@
                     </li>
                     <li data-theme="c">
                         <a href="#page1" data-transition="slide">
-                            15일
+                            <div class="calendar">
+                                <span calss="month">Aug</span>
+                                <span class="day">15</span>
+                            </div>
                             <span class="ui-li-count">
                                 4
                             </span>
@@ -198,7 +232,10 @@
                     </li>
                     <li data-theme="c">
                         <a href="#page1" data-transition="slide">
-                            1일
+                            <div class="calendar">
+                                <span calss="month">Aug</span>
+                                <span class="day">1</span>
+                            </div>
                             <span class="ui-li-count">
                                 6
                             </span>
@@ -300,8 +337,8 @@
         <!-- Diary - Content -->
         <div data-role="page" data-theme="b" id="page9">
             <div data-theme="a" data-role="header">
-                <a data-role="button" href="#page9" data-icon="minus" data-iconpos="left"
-                class="ui-btn-right">
+                <a data-role="button" href="#page15" data-icon="minus" data-iconpos="left"
+                class="ui-btn-right" data-rel="dialog">
                     Delete
                 </a>
                 <h3>
@@ -376,8 +413,8 @@
                 <h3>
                     H.I.M.M.
                 </h3>
-                <a data-role="button" href="#page8" data-icon="minus" data-iconpos="left"
-                class="ui-btn-right">
+                <a data-role="button" href="#page15" data-icon="minus" data-iconpos="left"
+                class="ui-btn-right" data-rel="dialog">
                     Delete
                 </a>
             </div>
@@ -436,15 +473,10 @@
         </div>
         <!-- Select Camera or Open File -->
         <div data-role="page" data-theme="b" id="page12">
-            <div data-theme="a" data-role="header">
-                <h5>
-                    H.I.M.M.
-                </h5>
-            </div>
             <div data-role="content">
                 <ul data-role="listview" data-divider-theme="b" data-inset="true">
                     <li data-role="list-divider" role="heading">
-                        New
+                        <p><h2>새 글 작성하기</h2></p>
                     </li>
                     <li data-theme="c">
                         <a href="#page14" data-transition="pop">
@@ -456,23 +488,9 @@
                             기존 사진으로
                         </a>
                     </li>
-                </ul>
-            </div>
-            <div data-role="tabbar" data-iconpos="top" data-theme="a">
-                <ul>
-                    <li>
-                        <a href="#page1" data-theme="" data-icon="home">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#page2" data-theme="" data-icon="plus">
-                            Diary
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#page3" data-theme="" data-icon="search">
-                            Map
+                    <li data-theme="d">
+                        <a href="#page2" data-transition="pop" data-direction="reverse">
+                            취소
                         </a>
                     </li>
                 </ul>
@@ -527,6 +545,26 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <!-- Deleting.. -->
+        <div data-role="page" data-theme="b" id="page15">
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        <p><h2>삭제 하시겠습니까?</h2></p>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="pop">
+                            예
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page9" data-transition="pop">
+                            아니오
+                        </a>
+                    </li>
+                </ul>
+            </div>            
         </div>
         <script>
               //App custom javascript
