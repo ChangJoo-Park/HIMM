@@ -16,9 +16,12 @@ Here Is My Memory(이하 HIMM)은 하이브리드 앱입니다.
 8. 2012년 10월 29일 - 발표자료, 데모 수정 : 전원
 9. 2012년 11월 02일 - 구글맵 마커 아이콘 변경 : 장형주
 10. 2012년 11월 02일 - 카메라 기능 구현 : 박창주
-
-##*맡은 파트*
+11. 2012년 11월 03일 - 카메라 기능 -> 캡처 구현 : 박창주
+12. 2012년 11월 05일 - 카메라 촬영 후 사진 저장 기능 구현 : 박창주
+##*참여*
 ======================
-- 남중민 (dbflgks0602@gmail.com)- [폰갭](http://phonegap.com)
-- 박창주 (pcjpcj2@gmail.com) - [포토스와이프](http://www.photoswipe.com/)
-- 장형주 (dacapolife87@gmail.com) - [구글맵](http://code.google.com/p/jquery-ui-map/)
+- 박창주 (pcjpcj2@gmail.com)
+
+- 남중민 (dbflgks0602@gmail.com)
+
+- 장형주 (dacapolife87@gmail.com)
