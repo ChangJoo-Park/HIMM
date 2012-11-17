@@ -1,0 +1,7 @@
+INDEX VERSION 1.122+C:\Users\ChangJu\Documents\GitHub\HIMM\Android\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1739216427.index
+3949496102.index
+156791831.index
+2601289565.index
+1156118951.index
+2301417148.index
