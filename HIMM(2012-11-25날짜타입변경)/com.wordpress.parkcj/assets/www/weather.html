@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var lng,lat;
+			var urlw;
+			if(!navigator.geolocation)
+			{
+				alert("지원하지 않음");
+			}
+			else
+			{
+				navigator.geolocation.getCurrentPosition(success,error);
+			}
+			function success(position){
+				lng=position.coords.longitude;
+				lat=position.coords.latitude;
+				urlw = "http://api.wunderground.com/api/c6cfb0c2f0291d80/conditions/lang:KR/q/";
+				urlw +=lat;
+				urlw +=",";
+				urlw +=lng;
+				urlw +=".json";
+			}
+			function error(){
+				alert("실패");
+			}
+			$("#btn").live("click",function(){
+		  $.ajax({
+			  url : urlw,
+			  dataType : "jsonp",
+			  jsonp : "callback",
+			  success : function(parsed_json) {
+			  	//현재 위치
+			  	var curlocate = parsed_json.current_observation.display_location.full;
+			  	//현재 온도
+			  	var curtemper = parsed_json.current_observation.temp_c+"도";
+			  	//현재 날씨
+			  	var curweather = parsed_json.current_observation.weather;
+			  	//아이콘 URL
+			  	var curiconurl = parsed_json.current_observation.icon_url;
+			  	//현재 시간
+			  	var curtime = parsed_json.current_observation.local_time_rfc822;
+			  	
+			  	$("#showwt").append("<p> 현재 위치 : "+curlocate+"현재 온도 :"+curtemper+"현재 날씨 : "+curweather+"<img src='"+curiconurl+"'/></p>");
+			  	$("#showwt").append("<p> 현재 시간 : "+curtime+"</p>");
+			  }
+		  	});
+		  });
+		});
+
+
+
+	</script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>My Title</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>Hello world</p>		
+		<input type="button" name="" value="날씨" id="btn">
+		<div id="showwt">dddd</div>
+	</div><!-- /content -->
+</div><!-- /page -->
+
+</body>
+</html>
